@@ -6,31 +6,19 @@ using System.Threading.Tasks;
 
 namespace BankZaken
 {
-    /**
-     * Convert attributes to properties, paragraph 4.6, p158
-     * Implement class diagram fig 4.14, p172
-     * Add the ToString method
-     */ 
-    class Account
+    public class Account
     {
         private string name;
-        private decimal balance;
 
-        public void SetName(string name)
+        public void setName(string name)
         {
             this.name = name;
         }
 
-        public string GetName()
+        public string getName()
         {
-            return name;
+            return this.name;
         }
-
-        public void SetBalance(decimal balance)
-        {
-            this.balance = balance;
-        }
-
 
     }
 }

@@ -8,18 +8,18 @@ namespace UnitTestBankZaken
     public class UnitTestAccount
     {
         [TestMethod]
-        public void TestClass_WhenInstantiatingAccount_ShouldNotNull()
+        public void Test_WhenInstantiatingAccount_ItShouldNotEqualsNull()
         {
             Account account = new Account();
             Assert.AreNotEqual(null, account);
         }
 
-        [TestMethod]
-        public void TestClass_WhenGetNameProperty_ShouldReturnStringMichael()
-        {
-            Account account = new Account();
-            account.Name = "Michael";
-            Assert.AreNotEqual("Michael", account.Name);
-        }
+        //[TestMethod]
+        //public void TestClass_WhenGetNameProperty_ShouldReturnStringMichael()
+        //{
+        //    Account account = new Account();
+        //    account.Name = "Michael";
+        //    Assert.AreNotEqual("Michael", account.Name);
+        //}
     }
 }
