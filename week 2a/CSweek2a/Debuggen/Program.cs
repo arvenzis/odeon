@@ -7,33 +7,6 @@ using System.Threading.Tasks;
 
 namespace Debuggen
 {
-    public class Telefoon
-    {
-        public List<string> GebeldeNummers { get; set; } = new List<string>();
-
-        public void Bellen(string nummer)
-        {
-            if(!nummer.StartsWith("0") && !nummer.StartsWith("+"))
-            {
-                throw new ArgumentOutOfRangeException("Telefoonnummer moet starten met 0 of +");
-            }
-
-            if(nummer.StartsWith("0") && nummer.Length > 10)
-            {
-                throw new ArgumentOutOfRangeException("Telefoonnummer moet 10 tekens lang zijn");
-            }
-
-            if (nummer.StartsWith("+") && nummer.Length > 10)
-            {
-                throw new ArgumentOutOfRangeException("Telefoonnummer moet 12 tekens lang zijn");
-            }
-
-            GebeldeNummers.Add(nummer);
-
-            Console.WriteLine($"Op dit moment wordt {nummer} gebeld. Tuuuuut, tuuuuut.");
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
