@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using BankZaken;
 
 namespace UnitTestBankZaken
 {
@@ -17,8 +17,8 @@ namespace UnitTestBankZaken
         [TestMethod]
         public void TestClass_WhenGetNameProperty_ShouldReturnStringMichael()
         {
-            //Account account = new Account("Michael", 0.00m);
-            //Assert.AreEqual("Michael", account.Name);
+            Account account = new Account("Michael", 0.00m);
+            Assert.AreEqual("Michael", account.Name);
         }
 
     }
