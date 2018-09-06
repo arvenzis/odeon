@@ -17,8 +17,6 @@ namespace UnitTestBankZaken
         [TestMethod]
         public void TestClass_WhenGetNameProperty_ShouldReturnStringMichael()
         {
-            //Account account = new Account();
-            //account.Name = "Michael";
             //Account account = new Account("Michael", 0.00m);
             //Assert.AreEqual("Michael", account.Name);
         }
